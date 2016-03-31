@@ -10,6 +10,7 @@
 ****************************************************************************/
 package com.ibuildapp.romanblack.QRPlugin;
 
+import com.appbuilder.sdk.android.StartUpActivity;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
 import com.google.zxing.ResultMetadataType;
@@ -70,6 +71,7 @@ import java.util.Set;
  * shows feedback as the image processing is happening, and then overlays the
  * results when a scan is successful.
  */
+@StartUpActivity(moduleName = "QRCodeReader")
 public final class QRPlugin extends AppBuilderModule implements SurfaceHolder.Callback {
 
     private static final String TAG = QRPlugin.class.getSimpleName();

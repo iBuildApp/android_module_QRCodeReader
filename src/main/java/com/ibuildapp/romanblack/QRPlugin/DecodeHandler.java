@@ -81,7 +81,7 @@ final class DecodeHandler extends Handler {
             // Don't log the barcode contents for security.
 
             if (handler != null) {
-                Message message = Message.obtain(handler, Constants.DECODE_SUCCEEDED, 
+                Message message = Message.obtain(handler, Constants.DECODE_SUCCEEDED,//R.id.decode_succeeded, 
                         rawResult);
                 Bundle bundle = new Bundle();
                 bundle.putParcelable(DecodeThread.BARCODE_BITMAP, source.renderCroppedGreyscaleBitmap());
@@ -90,7 +90,7 @@ final class DecodeHandler extends Handler {
             }
         } else {
             if (handler != null) {
-                Message message = Message.obtain(handler, Constants.DECODE_FAILED);
+                Message message = Message.obtain(handler, Constants.DECODE_FAILED);//R.id.decode_failed);
                 message.sendToTarget();
             }
         }
