@@ -21,4 +21,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile "com.ibuildapp:sdk:$iBuildAppSdkVersion"
+//    compile project(':api')
+
+    compile "com.android.support:appcompat-v7:$AppCompatVersion"
+    compile "com.journeyapps:zxing-android-embedded:$ZxingAndroidEmbeddedVersion@aar"
+    compile "com.google.zxing:core:$ZxingCoreVersion"
 }

@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.ibuildapp.romanblack.QRPlugin.QRPlugin"
+    tools:showIn="@layout/qr_code_layout_main">
+
+</LinearLayout>
